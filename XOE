@@ -1,13 +1,13 @@
 import socket,urllib2
 
 print """
-  ____     __  __    _____
- / ___|    \ \/ /   | ____|
- \___ \     \  /    |  _|
-  ___) |    /  \    | |___
- |____/    /_/\_\   |_____|
+ __  __   ___    _____
+ \ \/ /  / _ \  | ____|
+  \  /  | | | | |  _|
+  /  \  | |_| | | |___
+ /_/\_\  \___/  |_____|
 
-# Exploit SVG XXE Vulnerability Easily
+# Exploit XXE OOB Vulnerability Easily
 # Coded By karim Shoair | D4Vinci
 # All Copyright To Squnity Company Team & Deveolopers
 """
